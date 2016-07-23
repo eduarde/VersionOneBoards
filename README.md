@@ -1,7 +1,7 @@
 # VersionOneBoards
 Basic Angular App + Firebase
 
-## Pre-requisite:
+## Prerequisite:
 
 1. Create a new firebase project: https://console.firebase.google.com
 2. Open the project and navigate to the AUTH section
