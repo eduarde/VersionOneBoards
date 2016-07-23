@@ -1,0 +1,35 @@
+<div class="container">
+
+<h1>Add new board</h1>
+  <hr>
+
+  <h4><p class="bg-primary" style="padding: 30px;">Please fill the required information for the new board.</p></h4>
+  <br /><br /><br />
+    
+  <style>input.ng-invalid.ng-dirty { background-color: pink }</style>
+  <form name="boardForm" role="form">
+    <fieldset>
+
+      <div class="form-group">
+        <input id="labelName" class="form-control" type="text" required ng-model="board.label" placeholder="Label" />
+      </div>
+               
+      <div class="form-group">
+        <input class="form-control" id="urlBoard" type="url" required ng-model="board.link" class="input-xlarge" placeholder="URL location" />
+      </div>
+    </fieldset>
+
+    <div class="form-group"> 
+      <button class="btn btn-primary" type="submit" ng-disabled="boardForm.$invalid" ng-click="saveBoard(board, boardForm)" class="btn btn-primary">Save</button>
+      <button type="button" ng-click="back()" class="btn btn-default">Cancel</button>
+    </div>
+  </form>
+
+  <hr>
+  <footer>
+      <p>&copy; 2016 Cerner Romania, <cite>Erja Eduard</cite> </p>
+  </footer>
+</div>
+
+
+ 

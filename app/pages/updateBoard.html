@@ -1,0 +1,37 @@
+<div class="container">
+
+	<h1>Update board</h1>
+  	<hr>
+
+	<h4><p class="bg-primary" style="padding: 30px;">Update the desired board from the followng list.</p></h4>
+  	<br /><br />
+
+  
+		 
+		
+
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Label</th>
+					<th>URL</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr ng-repeat="(key,board) in boards">
+					<td>{{1+key}}</td>
+					<td>{{board.label}}</td>
+					<td>{{board.link}}</td>
+					<td><a href="{{board.link}}" target="_blank"><span class="glyphicon glyphicon-link"></a></td>
+					<td><button type="button" disabled ng-click="doUpdate(board)" class="btn btn-warning"><span style="padding: 5px;" class="glyphicon glyphicon-refresh"> </span></button> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

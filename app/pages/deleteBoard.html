@@ -1,0 +1,38 @@
+<div class="container">
+
+	<h1>Delete board</h1>
+  	<hr>
+
+	<h4><p class="bg-primary" style="padding: 30px;">Delete the desired board from the followng list.</p></h4>
+  	<br /><br />
+
+  
+	
+
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Label</th>
+					<th>URL</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr ng-repeat="(key,board) in boards">
+					<td>{{1+key}}</td>
+					<td>{{board.label}}</td>
+					<td>{{board.link}}</td>
+					<td><a href="{{board.link}}" target="_blank"><span class="glyphicon glyphicon-link"></a></td>
+					<td><button type="button" ng-click="deleteBoard(board)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span></button> </td>
+	
+				
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
